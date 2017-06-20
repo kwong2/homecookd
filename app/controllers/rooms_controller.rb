@@ -6,6 +6,7 @@ class RoomsController < ApplicationController
     @rooms = current_user.rooms
   end
 
+
   def show
     @photos = @room.photos
   end
@@ -19,8 +20,8 @@ class RoomsController < ApplicationController
 
     if @room.save
 
-      if params[:images] 
-        params[:images].each do |image|
+      if params[:image] 
+        params[:image].each do |image|
           @room.photos.create(image: image)
         end
       end
@@ -43,8 +44,8 @@ class RoomsController < ApplicationController
   def update
     if @room.update(room_params)
 
-      if params[:images] 
-        params[:images].each do |image|
+      if params[:room][:image] 
+        params[:room][:image].each do |image|
           @room.photos.create(image: image)
         end
       end
