@@ -1,3 +1,56 @@
 // Place all the styles related to the Pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+#landingpage{
+	background: transparent;
+	background-position: 0% 25%;
+	margin-bottom: 0px;
+	margin-top: 60px;
+    background-size: cover;
+	max-width: 100%;
+	height: auto;
+	color: white;
+	font-style: bold;
+	font-family: 'Cormorant+Garamond', sans-serif;
+	text-shadow: black 0.3em 0.3em 0.3em;
+	display: flex;
+  	align-items: center;
+}
+
+.jumbotron {
+	min-height: 350px;
+	text-shadow: black 0.2em 0.2em 0.2em;
+}
+
+#jumbotext {
+	position: relative;
+	margin-left: 22%;
+}
+
+
+@media screen and (max-width: 1201px){
+	#search_homes {
+		font-size: 15px;
+		color: black;
+		/*min-width: 300px; */
+		width: 400px;
+	}
+	
+	#motto {
+		margin-left: 10%;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	#search_homes {
+		width: 800px;
+		font-size:15px;
+		color:black;
+	}
+		#motto {
+		margin-left: 28%;
+	}
+}
+
