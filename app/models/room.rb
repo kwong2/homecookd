@@ -12,6 +12,4 @@ class Room < ApplicationRecord
   validates :address, presence: true
 
 
-
-
 end

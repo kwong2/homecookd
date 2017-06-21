@@ -22,7 +22,7 @@ class RoomsController < ApplicationController
 
       if params[:image] 
         params[:image].each do |image|
-          @room.photos.create(image: image)
+          @room.photos.create!(image: image)
         end
       end
 
@@ -46,7 +46,7 @@ class RoomsController < ApplicationController
 
       if params[:room][:image] 
         params[:room][:image].each do |image|
-          @room.photos.create(image: image)
+          @room.photos.create!(image: image)
         end
       end
 
@@ -62,6 +62,6 @@ class RoomsController < ApplicationController
     end
 
     def room_params
-      params.require(:room).permit(:home_type, :room_type, :accommodate, :bed_room, :bath_room, :listing_name, :summary, :address, :is_tv, :is_kitchen, :is_air, :is_heating, :is_internet, :price, :active)
+      params.require(:room).permit(:home_type, :room_type, :accommodate, :bed_room, :bath_room, :listing_name, :summary, :address, :is_tv, :is_kitchen, :is_air, :is_heating, :is_internet, :price, :active, :image)
     end
 end
