@@ -7,7 +7,7 @@ end
 
 gem 'omniauth'
 gem 'omniauth-facebook'
-
+gem 'awesome_print'
 
 gem 'toastr-rails'
 gem 'devise'

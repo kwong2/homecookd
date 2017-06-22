@@ -34,9 +34,7 @@ class ReservationsController < ApplicationController
 		
 		@rooms = current_user.rooms{}
 		
-		# @reservations = @rooms.map{|room| room.reservations
-		# 	.reject{|reservatoin| reservation.start_date.nil? }
-		# }
+
 
 	end
 
