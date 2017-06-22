@@ -1,3 +1,30 @@
 // Place all the styles related to the Rooms controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+@media screen and (max-width: 1201px){
+    #createhome {
+        margin-top: 15%;
+        position: relative;
+}
+	#roomshow{
+		margin-top: 15%
+	}
+    
+}
+
+@media screen and (min-width: 1200px) {
+    #createhome {
+        margin-top: 10%;
+    }
+
+    #roomshow {
+		margin-top:  5%;
+    }
+}
+
+#myCarousel1 {
+    z-index: 10;
+}
