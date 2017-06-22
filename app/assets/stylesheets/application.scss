@@ -207,6 +207,7 @@ input[type="checkbox"]:checked:before {
   color: #ff5a5f;
 }
 
+<<<<<<< HEAD
 .btn-file {
     position: relative;
     overflow: hidden;
@@ -235,6 +236,11 @@ input[type="checkbox"]:checked:before {
 .panel-heading.preview img{  
   width: 100%;
 }
+=======
+
+
+
+>>>>>>> conversation
 
 .amenities li {
   margin-bottom: 10px;
@@ -291,3 +297,13 @@ input[type="checkbox"]:checked:before {
   border: 1px solid #dce0e0;
   padding: 10px;
 }
+
+.conversation {
+  color: #7f7f7f;
+  padding: 10px;
+}
+
+.conversation:hover, .conversation:focus{
+  background-color: #F4F4F5;
+}
+
