@@ -1,48 +1,52 @@
 
 #landingpage{
-	background: transparent;
-	margin-bottom: 0px;
-	margin-top: 15%;
-	max-width: 100%;
-	height: auto;
-	color: white;
-	font-style: bold;
-	font-family: 'Cormorant+Garamond', sans-serif;
-	text-shadow: black 0.3em 0.3em 0.3em;
-	display: flex;
-  	justify-content: center;
-  	text-align: center;
+    background: transparent;
+    margin-bottom: 0px;
+    margin-top: 15%;
+    max-width: 100%;
+    height: auto;
+    color: white;
+    font-style: bold;
+    font-family: 'Cormorant+Garamond', sans-serif;
+    text-shadow: black 0.3em 0.3em 0.3em;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 
 }
 
 .jumbotron {
-	min-height: 350px;
-	text-shadow: black 0.2em 0.2em 0.2em;
+    min-height: 350px;
+    text-shadow: black 0.2em 0.2em 0.2em;
+}
+
+#zipsub {
+    display: block;
+    margin: auto;
 }
 
 
-
 .ziptext {
-	text-align: center;
+    text-align: center;
 }
 
 
 @media screen and (max-width: 1201px){
-	#search_homes {
-		font-size: 15px;
-		color: black;
-		/*min-width: 300px; */
-		width: 400px;
-	}
-	
+    #search_homes {
+        font-size: 15px;
+        color: black;
+        /*min-width: 300px; */
+        width: 400px;
+    }
+    
 }
 
 @media screen and (min-width: 1200px) {
-	#search_homes {
-		width: 800px;
-		font-size:15px;
-		color:black;
-	}
+    #search_homes {
+        width: 800px;
+        font-size:15px;
+        color:black;
+    }
 }
 
 html {
@@ -52,6 +56,7 @@ html {
 .carousel-fade .carousel-inner .item {
     opacity: 0;
     transition-property: opacity;
+
 }
 .carousel-fade .carousel-inner .active {
     opacity: 1;
@@ -125,42 +130,4 @@ html {
   height: 100%;
   width: 100%;
   overflow: hidden;
-}
-
-.btn-file {
-    position: relative;
-    overflow: hidden;
-}
-
-.btn-file input[type=file] {
-    position: absolute;
-    top: 0;
-    right: 0;
-    min-width: 100%;
-    min-height: 100%;
-    font-size: 100px;
-    text-align: right;
-    filter: alpha(opacity=0);
-    opacity: 0;
-    outline: none;
-    background: white;
-    cursor: inherit;
-    display: block;
-}
-
-.panel-heading.preview {
-  padding: 0;
-}
-
-.panel-heading.preview img{  
-  width: 100%;
-}
-
-.amenities li {
-  margin-bottom: 10px;
-  list-style-type: none;
-}
-
-.text-line-through {
-  text-decoration: line-through
 }
