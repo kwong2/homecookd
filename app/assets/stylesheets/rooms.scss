@@ -12,6 +12,13 @@
 	#roomshow{
 		margin-top: 15%
 	}
+    #pexel img{
+        max-height: 300px;
+    }
+
+    #pexel {
+        margin-top: 4%;
+    }
     
 }
 
@@ -21,7 +28,14 @@
     }
 
     #roomshow {
-		margin-top:  5%;
+        margin-top:  5%;
+    }
+    #pexel img{
+        max-height: 82px;
+    }
+
+    #pexel {
+        margin-top: .6%;
     }
 }
 
@@ -31,20 +45,35 @@
 
 #boxymoxy {
 	margin-top: 10%;
-	
+    outline: 1px solid black;	
 }
 
-* {
-  outline: 1px solid blue;
-}
 
 #pexel img{
  width: 100%;
  height: 100%;
- background-size: cover;
  display: block;
+ outline: 1px solid black;
+ margin: auto;
 }
 
 #what {
     margin-top: 0%;
+}
+
+.potato {
+
+}
+
+.divide {
+        outline: 1px solid black;
+
+}
+
+@media screen {
+    
+}
+
+#headermeal {
+    text-align: center;
 }
