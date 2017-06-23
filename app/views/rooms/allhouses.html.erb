@@ -1,15 +1,17 @@
 <div id="boxymoxy" class="container-fluid">
   <div id="what" class="row">
-  	<div>Oh! Is this where the header will go?
-		<h1>Home Made Meals Near You!</h1>
+  	<div>
+		<h1 id="headermeal">Home Made Meals Near You!</h1>
 		</div></div>
+		<div id="headerspacer"class="row divide"><hr /></div>
 		<% if @rooms %>
 			<% @rooms.each do |room|%>
-			    <div id="pexel" class="col-md-2"><%= image_tag room.photos.first.image %>
+			    <div id="pexel" class="col-md-2 potato"><%= image_tag room.photos.first.image %>
 			    </div>
 			    <div class="col-md-5"><%= room.summary%></div>
 			    <div class="col-md-5">Box 3</div>
-			   	<div class="row">white space? </div>
+			   	<div class="row divide"><hr /></div>
+
 			<% end %>
 		<% end %>
 	     
