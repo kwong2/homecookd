@@ -1,6 +1,6 @@
 <div id ="createhome" class="panel panel-default">
 	<div class="panel-heading">
-		Create your beautiful place
+		Share Your Wonderful Meal!
 	</div>
 	<div class="panel-body">
 		<div class="container">
@@ -10,15 +10,15 @@
 				<div class="row">
 					<div class="col-md-4 select">
 						<div class="form-group">
-							<label>Home Type</label>
-							<%= f.select :home_type, [["Apartment","Apartment"], ["House","House"], ["Bed & Breakfast","Bed & Breakfast"]], id: "home_type", prompt: "Select...", class: "form-control" %>
+							<label>Meal Type</label>
+							<%= f.select :home_type, [["Breakfast","Breakfast"], ["Lunch","Lunch"], ["Dinner","Dinner"]], id: "home_type", prompt: "Select...", class: "form-control" %>
 						</div>
 					</div>
 
 					<div class="col-md-4 select">
 						<div class="form-group">
-							<label>Room Type</label>
-							<%= f.select :room_type, [["Entire","Entire"], ["Private","Private"], ["Shared","Shared"]],prompt: "Select...", class: "form-control" %>
+							<label>Eat-In or Take-Out</label>
+							<%= f.select :room_type, [["Eat-In","Eat-In"], ["Take-Out","Take-Out"], ["Local Delivery","Local Delivery"]],prompt: "Select...", class: "form-control" %>
 						</div>
 					</div>
 
@@ -33,29 +33,23 @@
 				<div class="row">
 					<div class="col-md-4 select">
 						<div class="form-group">
-							<label>Bedrooms</label>
+							<label>Meals Per Person</label>
 							<%= f.select :bed_room, [["1",1], ["2",2], ["3",3], ["4+",4]], prompt: "Select...", class: "form-control" %>
 						</div>
 					</div>
 
-					<div class="col-md-4 select">
-						<div class="form-group">
-							<label>Bathrooms</label>
-							<%= f.select :bath_room, [["1",1], ["2",2], ["3",3], ["4+",4]], prompt: "Select...", class: "form-control" %>
-						</div>
-					</div>
 				</div>
 
 				<div class="row">
 					<div class="form-group">
-						<label>Listing name</label>
+						<label>Style of Meal</label>
 						<%= f.text_field :listing_name, placeholder: "Be clear and descriptive", class: "form-control" %>
 					</div>
 				</div>
 
 				<div class="row">
 					<div class="form-group">
-						<label>Summary</label>
+						<label>Meal Description</label>
 						<%= f.text_area :summary, rows: 5, placeholder: "Tell about your house", class: "form-control" %>
 					</div>
 				</div>
@@ -66,34 +60,12 @@
 						<%= f.text_field :address, placeholder: "What is your address?", class: "form-control" %>
 					</div>
 				</div>
+	
 
 				<div class="row">
 					<div class="col-md-4">
 						<div class="form-group">
-							<%= f.check_box :is_tv %> TV
-						</div>
-						<div class="form-group">
-							<%= f.check_box :is_kitchen %> Kitchen
-						</div>
-						<div class="form-group">
-							<%= f.check_box :is_internet %> Internet
-						</div>
-					</div>
-
-					<div class="col-md-4">
-						<div class="form-group">
-							<%= f.check_box :is_heating %> Heating
-						</div>
-						<div class="form-group">
-							<%= f.check_box :is_air %> Air Conditioning
-						</div>
-					</div>	
-				</div>	
-
-				<div class="row">
-					<div class="col-md-4">
-						<div class="form-group">
-							<label>Nightly Price</label>
+							<label>Meal Price</label>
 							<div class="input-group">
 								<div class="input-group-addon">$</div>
 								<%= f.text_field :price, placeholder: "eg. $100", class: "form-control" %>
