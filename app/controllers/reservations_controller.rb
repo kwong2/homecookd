@@ -31,11 +31,14 @@ class ReservationsController < ApplicationController
 	end
 
 	def your_reservations
-		
 		@rooms = current_user.rooms{}
-		
+	end
 
+	def destroy
+		@reservation = Reservation.find(params[:user_id])
+		reservation = @reservation.room
 
+		redirect_to '/your_reservations'
 	end
 
 	private
