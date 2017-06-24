@@ -16,7 +16,7 @@
 				<% @trips.each do |trip| %>
 					<div class="row">
 						<div class="col-md-2">
-							<%= trip.start_date.strftime('%v') %>
+							<%= trip.start_date.strftime('%D %r') %>
 						</div>	
 						<div class="col-md-6">
 							<%= link_to room_path(trip.room) do %>
