@@ -5,7 +5,7 @@
 			<%= image_tag avatar_url(@user), class: "avatar-full" %>
 
 			<% if current_user != @user %>
-			<div class="row-space-2">
+			<div id="sendmsgbutton" class="row-space-2">
 				<%= link_to "Send Message", conversations_path(sender_id: current_user.id, recipient_id: @user.id), method: 'post', class: "btn btn-primary wide"%>
 			</div>
 			<% end %>
@@ -27,7 +27,7 @@
 			<%= @user.description %>
 		</div>
 
-		<h4>Listings (<%= @rooms.length %>)</h4><br>
+		<h4>Current Meals Serving (<%= @rooms.length %>)</h4><br>
 
 		<div class="row">
 			
