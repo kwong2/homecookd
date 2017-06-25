@@ -14,8 +14,8 @@
 			<div class="panel-body">
 				<% @rooms.each do |room| %>
 					<% room.reservations.each do |reservation| %>
-						<div class="row">
-							<div class="col-md-2">
+						<div id="resindexrow" class="row">
+							<div id="resertime" class="col-md-2">
 								<%= reservation.start_date %>
 							</div>	
 							<div id="thumbnailresi" class="col-md-4">
@@ -23,16 +23,16 @@
 									<%= image_tag room.photos.first.image %>
 								<% end %>
 							</div>	
-							<div class="col-md-2">
+							<div id="useravatarres" class="col-md-2">
 								<%= link_to user_path(reservation.user) do %>
 									<%= image_tag avatar_url(reservation.user), class: "img-circle avatar-medium" %>
 								<% end %>	
 							</div>	
-							<div class="col-md-2 right">
+							<div id="reserprice" class="col-md-2 right">
 								<h4>$<%= reservation.price %></h4>
 							</div>	
 							<div class="col-md-2">
-							 <button id="zipsub" type="button" class="btn btn-primary btn-sm">Delete</button>
+							 <button id="zipsub" type="button" class="btn btn-primary btn-sm">Delete<br>Reservation</button>
 							
 							</div>
 						</div>

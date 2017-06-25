@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-
+// this applies when half screen
 @media screen and (max-width: 1201px){
     #createhome {
         margin-top: 15%;
@@ -38,6 +38,7 @@
     
 }
 
+// this applies when full screen
 @media screen and (min-width: 1200px) {
     #createhome {
         margin-top: 10%;

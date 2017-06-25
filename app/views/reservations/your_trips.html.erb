@@ -9,13 +9,13 @@
 	<div class="col-md-9">
 		<div class="panel panel-default">
 			<div class="panel-heading">
-				Your Trips
+				Your Upcoming Meals
 			</div>
 			<div class="panel-body">
 				
 				<% @trips.each do |trip| %>
-					<div class="row">
-						<div class="col-md-2">
+					<div id="tripsindexrow" class="row">
+						<div id="mealstarttime" class="col-md-2">
 							<%= trip.start_date.strftime('%D %r') %>
 						</div>	
 						<div id="tripsimg" class="col-md-6">
@@ -23,12 +23,12 @@
 							<%= image_tag trip.room.photos.first.image %>
 							<% end %>
 						</div>	
-						<div class="col-md-2">
+						<div id="useravatrips" class="col-md-2">
 							<%= link_to user_path(trip.room.user) do %>
 								<%= image_tag avatar_url(trip.room.user), class: "img-circle avatar-medium" %>
 							<% end %>	
 						</div>	
-						<div class="col-md-2 right">
+						<div id="mealprice" class="col-md-2 right">
 							<h4>$<%= trip.price %></h4>
 						</div>	
 					</div>

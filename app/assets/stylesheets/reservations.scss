@@ -1,13 +1,99 @@
 // Place all the styles related to the Reservations controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-#thumbnailresi img {
-	max-width: 250px;
-	max-height: 250px;	
+// this applies when half screen
+@media screen and (max-width: 1201px){
+
+	#thumbnailresi img {
+		max-height: 275px;	
+		max-width: auto;
+	}	
+
+
+	#tripsimg img {
+		max-height: 275px;	
+		max-width: auto;
+	}
+
+
+    #roomsindexdivider {
+   	 width: 449px;
+	}
+	
+	#resertime {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+	}
+    #useravatarres {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #reserprice {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #useravatrips {
+        display: flex;
+        align-items: center;
+        justify-content: center;	
+    }
+
+    #mealprice {
+        display: flex;
+        align-items: center;
+        justify-content: center;	
+    }
+
+    #mealstarttime {
+        display: flex;
+        align-items: center;
+        justify-content: center;	
+    }
+    
+    
+    
+}
+
+// this applies when full screen
+@media screen and (min-width: 1200px) {
+
+    #roomindeximg img{
+        max-height: 82px;
+        max-width: auto;
+    }
+	
+    #thumbnailresi  {
+		max-height: auto;	
+		max-width: 175px;
+	}	
+
+    #thumbnailresi img {
+		max-height: 82px;	
+		max-width: auto;
+	}	
+
+
+	#tripsimg img {
+		max-height: 82px;	
+		max-width: auto;
+	}
+
+    #roomsindexdivider {
+    	width: 700px;
+}
+
 }
 
 
-#tripsimg img {
-		max-width: 250px;
-	max-height: 250px;	
+
+#resindexrow {
+	margin-top: 0%;
+}
+
+#tripsindexrow {
+	margin-top: 0%;
 }

@@ -15,13 +15,15 @@
 				<% @rooms.each do |room| %>
 					<div id="roomindexrow" class="row">
 						<div id="roomindeximg" class="col-md-2">
-							<%= image_tag room.photos.first.image %>
+							<%= link_to room_path(room) do %>
+								<%= image_tag room.photos.first.image %>
+							<% end %>
 						</div>		
 						<div id="listtitle" class="col-md-7">
 							<h4><%= room.listing_name %></h4>
 						</div>		
 						<div id="roomsdestroy" class="col-md-3 right">
-							<%= link_to "Destroy", room_reservations_path(room), class: "btn btn-primary" %>
+							<%= link_to "Delete Meal", room_reservations_path(room), class: "btn btn-primary" %>
 						</div>		
 			   	<div class="row divide"><hr id="roomsindexdivider"></div>
 					</div>
