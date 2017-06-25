@@ -5,10 +5,14 @@
 
 // this applies when half screen
 @media screen and (max-width: 1201px){
+    #boxymoxy {
+        margin-top: 15%;
+        outline: 1px solid black;   
+    }
     #createhome {
         margin-top: 15%;
         position: relative;
-}
+    }
     #roomshow{
         margin-top: 15%
     }
@@ -26,20 +30,41 @@
     #listtitle {
         text-align: center;
     }
+    
     #roomsindexdivider {
     width: 449px;
-}
+    }
 
     #roomsdestroy {
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    
+    #mealsummaryall {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #mealpriceall {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #avatarall {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 // this applies when full screen
 @media screen and (min-width: 1200px) {
+    #boxymoxy {
+        margin-top: 8%;
+        outline: 1px solid black;   
+    }
     #createhome {
         margin-top: 10%;
     }
@@ -72,10 +97,6 @@
     z-index: 10;
 }
 
-#boxymoxy {
-    margin-top: 10%;
-    outline: 1px solid black;   
-}
 
 
 #pexel img{
@@ -106,6 +127,7 @@
 
 #headermeal {
     text-align: center;
+    color: orange;
 }
 
 #headerspacer {
