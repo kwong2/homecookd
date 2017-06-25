@@ -9,15 +9,31 @@
         margin-top: 15%;
         position: relative;
 }
-	#roomshow{
-		margin-top: 15%
-	}
+    #roomshow{
+        margin-top: 15%
+    }
     #pexel img{
         max-height: 300px;
     }
-
     #pexel {
         margin-top: 4%;
+    }
+    #roomindeximg img{
+        max-height: 275px;
+        max-width: auto;
+    }
+
+    #listtitle {
+        text-align: center;
+    }
+    #roomsindexdivider {
+    width: 449px;
+}
+
+    #roomsdestroy {
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     
 }
@@ -37,6 +53,18 @@
     #pexel {
         margin-top: .6%;
     }
+    #roomindeximg img{
+        max-height: 82px;
+        max-width: auto;
+    }
+    #listtitle {
+        text-align: center;
+    }
+
+    #roomsindexdivider {
+    width: 700px;
+} 
+
 }
 
 #myCarousel1 {
@@ -44,8 +72,8 @@
 }
 
 #boxymoxy {
-	margin-top: 10%;
-    outline: 1px solid black;	
+    margin-top: 10%;
+    outline: 1px solid black;   
 }
 
 
@@ -80,5 +108,9 @@
 }
 
 #headerspacer {
+    margin-top: 0%;
+}
+
+#roomindexrow {
     margin-top: 0%;
 }

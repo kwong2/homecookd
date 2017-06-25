@@ -1,9 +1,9 @@
 <div class="row">
 	<div class="col-md-3">
 		<ul class="sidebar-list">
-			<li class="sidebar-item"><%= link_to "Your Listing", rooms_path, class: "sidebar-link" %></li>
+			<li class="sidebar-item"><%= link_to "Your Meals", rooms_path, class: "sidebar-link" %></li>
 			<li class="sidebar-item"><%= link_to "Your Reservations", your_reservations_path, class: "sidebar-link" %></li>
-			<li class="sidebar-item"><%= link_to "Your Trips", your_trips_path, class: "sidebar-link active" %></li>
+			<li class="sidebar-item"><%= link_to "Your Upcoming Meals", your_trips_path, class: "sidebar-link active" %></li>
 		</ul>
 	</div>
 	<div class="col-md-9">
@@ -18,9 +18,9 @@
 						<div class="col-md-2">
 							<%= trip.start_date.strftime('%D %r') %>
 						</div>	
-						<div class="col-md-6">
+						<div id="tripsimg" class="col-md-6">
 							<%= link_to room_path(trip.room) do %>
-								<%= image_tag trip.room.photos[0].image.url(:thumb) if trip.room.photos.length > 0 %>
+							<%= image_tag trip.room.photos.first.image %>
 							<% end %>
 						</div>	
 						<div class="col-md-2">

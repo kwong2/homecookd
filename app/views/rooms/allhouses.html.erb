@@ -3,7 +3,7 @@
   	<div>
 		<h1 id="headermeal">Home Made Meals Near You!</h1>
 		</div></div>
-		<div id="headerspacer"class="row divide"><hr /></div>
+		<div id="headerspacer" class="row divide"><hr /></div>
 		<% if @rooms %>
 			<% @rooms.each do |room|%>
 			    <div id="pexel" class="col-md-2 potato"><%= image_tag room.photos.first.image %>
