@@ -21,8 +21,9 @@ class ReservationsController < ApplicationController
 	end
 
 	def create
-		@reservation = current_user.reservations.create(reservation_params)
-
+		@reservation = current_user.reservations.build(reservation_params)
+		@reservation.start_date = reservation_params["start_date"]
+		@reservation.save!
 		redirect_to @reservation.room, notice: "Your reservation has been created..."
 	end
 
@@ -46,7 +47,7 @@ class ReservationsController < ApplicationController
 			room = Room.find(params[:room_id])
 
 			check = room.reservations.where("? < start_date AND end_date < ?", start_date, end_date)
-			check.size > 0? true : false
+			check.size > 0 ? true : false
 		end
 
 		def reservation_params
