@@ -1,8 +1,8 @@
 <div id="roomshow" class="panel panel-default">
-	<div id="testbody" class="panel-body">
+	<div class="panel-body">
 		
 		<!-- Image -->
-		<div class="row">
+		<div id="roomshowbox" class="row">
 			<div class="col-md-12">
 				<%= image_tag @photos[0].image.url(), class: "img-responsive" if @photos.length > 0 %>
 			</div>
