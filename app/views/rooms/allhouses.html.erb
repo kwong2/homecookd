@@ -7,12 +7,18 @@
 		<% if @rooms %>
 			<% @rooms.each do |room|%>
 			    <div id="pexel" class="col-md-2 potato">
+			    	<%= link_to room_path(room) do %>
 			    		<%= image_tag room.photos.first.image %>
+			    	<% end %>
 			    </div>
 			    <div class="col-md-4"><%= room.summary%></div>
-			    <div class="col-md-4">Box 3</div>
+			    <div class="col-md-2">$<%= room.price %></div>
+			    <div class="col-md-4">
+				<%= link_to user_path(room.user) do %>
+					<%= image_tag avatar_url(room.user), class: "img-circle avatar-medium" %>
+							<% end %>
+			    </div>
 			   	<div class="row divide"><hr /></div>
-			
 			<% end %>
 		<% end %>
 	     
