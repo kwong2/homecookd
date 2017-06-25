@@ -16,7 +16,7 @@
 					<% room.reservations.each do |reservation| %>
 						<div class="row">
 							<div class="col-md-2">
-								<%= reservation.start_date %>
+								<%= reservation.start_date.strftime("%D") %>
 							</div>	
 							<div id="thumbnailresi" class="col-md-4">
 								<%= link_to room_path(reservation.room) do %>
