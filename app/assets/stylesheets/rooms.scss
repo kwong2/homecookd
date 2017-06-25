@@ -40,11 +40,6 @@
         align-items: center;
         justify-content: center;
     }
-    #mealsummaryall {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
 
     #mealpriceall {
         display: flex;
@@ -52,11 +47,7 @@
         justify-content: center;
     }
 
-    #avatarall {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+
 }
 
 // this applies when full screen
@@ -144,4 +135,16 @@
 
 #roomshowbox {
     margin-top: 0%;
+}
+
+#avatarall {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#mealsummaryall {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
