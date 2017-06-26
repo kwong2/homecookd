@@ -20,6 +20,9 @@ gem 'cocaine'
 
 gem 'jquery-ui-rails'
 
+gem 'private_pub'
+gem 'thin'
+
 # gem 'acts_as_bookable'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

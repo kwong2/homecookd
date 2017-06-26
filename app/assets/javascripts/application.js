@@ -16,6 +16,7 @@
 //= require rails-ujs
 //= require jquery-ui
 //= require toastr
+//= require private_pub
 //= require turbolinks
 //= require_tree .
 $(document).ready(function(){
