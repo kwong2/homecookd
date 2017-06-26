@@ -1,3 +1,12 @@
+In order to run the chat, in a separate terminal
+
+run this command
+
+rackup private_pub.ru -s thin -E production
+
+
+
+
 # README
 
 This README would normally document whatever steps are necessary to get the
