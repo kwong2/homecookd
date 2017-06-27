@@ -16,9 +16,8 @@
 				<% @trips.each do |trip| %>
 
 					<div id="tripsindexrow" class="row">
-						<div id="mealstarttime"  class="col-md-2">
+						<div id="mealstarttime"  class="col-md-2"> 
 							<%= trip.start_date.strftime('%D') %>
-
 						</div>	
 						<div id="tripsimg" class="col-md-6">
 							<%= link_to room_path(trip.room) do %>
