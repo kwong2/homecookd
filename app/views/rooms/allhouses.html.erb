@@ -11,7 +11,7 @@
 			    		<%= image_tag room.photos.first.image %>
 			    	<% end %>
 			    </div>
-			    <div id="mealsummaryall" class="col-md-4"><%= room.summary%></div>
+			    <div id="mealsummaryall" class="col-md-4"><%= room.listing_name%><br><%= room.address %></div>
 			    <div id="mealpriceall" class="col-md-2">$<%= room.price %></div>
 			    <div id="avatarall" class="col-md-4">
 				<%= link_to user_path(room.user) do %>
