@@ -17,7 +17,12 @@
 
 						<div id="resindexrow" class="row">
 							<div id="resertime" class="col-md-2">
-								<%= reservation.start_date.strftime("%D") %>
+								<% if reservation.start_date == nil %>
+							<% reservation.start_date = Time.now %>
+							<%= reservation.start_date.strftime('%D') %>
+							<% end %>
+					
+
 							</div>	
 							<div id="thumbnailresi" class="col-md-4">
 								<%= link_to room_path(reservation.room) do %>

@@ -16,10 +16,10 @@
 								</div>
 								<div class="col-md-2">
 									<%= other.fullname %><br>
-									<%= conversation.messages.last.message_time %>
+									<%= conversation.messages.last.message_time unless conversation.messages.empty? %>
 								</div>
 								<div class="col-md-8">
-									<%= conversation.messages.last.content %>
+									<%= conversation.messages.last.content unless conversation.messages.empty? %>
 								</div>
 							</div>
 

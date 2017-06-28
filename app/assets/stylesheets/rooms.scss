@@ -153,3 +153,11 @@
     align-items: center;
     justify-content: center;
 }
+
+.carousel-inner img {
+display: block;
+height: auto;
+max-width: 100%;
+line-height: 1;
+width: 100%; // Add this
+}
