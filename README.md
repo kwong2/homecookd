@@ -25,21 +25,24 @@ HomeCook'd was made using the Ruby on Rails framework, Bootstrap, HTML/CSS, Java
 ## Required 
 
 In order to allow real-time messages, while in the homecookd folder and in a separate terminal, run the following command:
-
+```
 rackup private_pub.ru -s thin -E production
-
+```
 ## Authors
 
-Kevin Wong
-```
-k.wong4@yahoo.com
-http://www.github.com/kwong2
-http://www.linkedin.com/in/kwong4
-```
+###Kevin Wong
 
-Alfonso Estremadoyro
-```
+k.wong4@yahoo.com
+
+http://www.github.com/kwong2
+
+http://www.linkedin.com/in/kwong4
+
+
+###Alfonso Estremadoyro
+
 alfonsoestre24@gmail.com
+
 http://www.github.com/ChannelTwo
+
 http://www.linkedin.com/in/alfonso-estremadoyro-a0711a128/
-```
