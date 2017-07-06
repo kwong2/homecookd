@@ -23,7 +23,7 @@ class ReservationsController < ApplicationController
 	def create
 		@reservation = current_user.reservations.build(reservation_params)
 		@reservation.start_date = reservation_params["start_date"]
-		@reservation.save!
+		# @reservation.save!
 		redirect_to @reservation.room, notice: "Your reservation has been created..."
 	end
 
@@ -43,12 +43,12 @@ class ReservationsController < ApplicationController
 	# end
 
 	private
-		def is_conflict(start_date, end_date)
-			room = Room.find(params[:room_id])
+		# def is_conflict(start_date, end_date)
+		# 	room = Room.find(params[:room_id])
 
-			check = room.reservations.where("? < start_date AND end_date < ?", start_date, end_date)
-			check.size > 0 ? true : false
-		end
+		# 	check = room.reservations.where("? < start_date AND end_date < ?", start_date, end_date)
+		# 	check.size > 0 ? true : false
+		# end
 
 		def reservation_params
 			params.require(:reservation).permit(:start_date, :price, :room_id)
