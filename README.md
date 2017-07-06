@@ -28,7 +28,7 @@ In order to allow real-time messages, while in the homecookd folder and in a sep
 
 rackup private_pub.ru -s thin -E production
 
-##Authors
+## Authors
 
 Kevin Wong
 k.wong4@yahoo.com
