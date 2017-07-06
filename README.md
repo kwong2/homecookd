@@ -32,13 +32,13 @@ rackup private_pub.ru -s thin -E production
 
 ### Kevin Wong
 
-k.wong4@yahoo.com
-http://www.github.com/kwong2
+k.wong4@yahoo.com<br>
+http://www.github.com/kwong2<br>
 http://www.linkedin.com/in/kwong4
 
 
 ### Alfonso Estremadoyro
 
-alfonsoestre24@gmail.com
-http://www.github.com/ChannelTwo
+alfonsoestre24@gmail.com<br>
+http://www.github.com/ChannelTwo<br>
 http://www.linkedin.com/in/alfonso-estremadoyro-a0711a128/
