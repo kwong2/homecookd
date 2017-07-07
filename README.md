@@ -19,15 +19,18 @@ and
 more!
 ```
 
-HomeCook'd was made using the Ruby on Rails framework, Bootstrap, HTML/CSS, JavaScript
+HomeCook'd was made using the Ruby on Rails framework, Bootstrap, HTML/CSS, and JavaScript.
 
 ## Installation
 
-Ruby and Ruby on Rails is needed on your system to run this application. **SKIP IF RUBY AND RUBY ON RAILS IS ALREADY INSTALLED**
+Ruby and Ruby on Rails is needed on your system to run this application. 
+
+**SKIP IF RUBY AND RUBY ON RAILS IS ALREADY INSTALLED**
 
 Proceed to https://www.ruby-lang.org/en/documentation/installation/ to learn how to install Ruby on your computer.
 
 Once Ruby is installed, proceed to http://installrails.com/ to install the Ruby on Rails framework.
+*******************************************************
 
 To download a copy of this repo into your computer, open your terminal and enter the following command: 
 
