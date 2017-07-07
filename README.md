@@ -26,7 +26,6 @@ HomeCook'd was made using the Ruby on Rails framework, Bootstrap, HTML/CSS, and 
 Ruby and Ruby on Rails is needed on your system to run this application. 
 
 **SKIP IF RUBY AND RUBY ON RAILS IS ALREADY INSTALLED**
-
 Proceed to https://www.ruby-lang.org/en/documentation/installation/ to learn how to install Ruby on your computer.
 
 Once Ruby is installed, proceed to http://installrails.com/ to install the Ruby on Rails framework.
@@ -47,7 +46,7 @@ Now that you are in the homecookd directory, run the migrations with:
 ```
 rake db:migrate
 ```
-When it is finished, open 2 separate tabs in your terminal use the following keys:
+When it is finished, open 2 separate tabs in your terminal using the following keys:
 
 ```
 Mac commmand + t
