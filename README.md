@@ -21,23 +21,65 @@ more!
 
 HomeCook'd was made using the Ruby on Rails framework, Bootstrap, HTML/CSS, JavaScript
 
+## Installation
 
-## Required 
+Ruby and Ruby on Rails is needed on your system to run this application. 
 
-In order to allow real-time messages, while in the homecookd folder and in a separate terminal, run the following command:
+To download a copy of this repo into your computer, open your terminal and enter the following command: 
+
+```
+git clone https://github.com/kwong2/homecookd.git
+``` 
+Once cloned, change the directory into the cloned repo with the following command:
+
+```
+cd homecookd
+```
+Now that you are in the homecookd directory, run the migrations with:
+
+```
+rake db:migrate
+```
+When it is finished, open 2 separate tabs in your terminal use the following keys:
+
+```
+Mac commmand + t
+Linux ctrl + shift + t
+```
+###### MAKE SURE YOU HAVE OPENED TWO TABS BEFORE PROCEEDING
+
+In one of the two new tabs, run the following:
+
+```
+rails s
+```
+
+In the second extra tab, run the following:
+
 ```
 rackup private_pub.ru -s thin -E production
 ```
+
+Finally, open your web browser, (chrome preferred) and go to:
+
+http://localhost:3000
+
+To EXIT, use the following keys on the tabs: 
+
+```
+ctrl + c 
+```
+
 ## Authors
 
-### Kevin Wong
+#### Kevin Wong
 
 k.wong4@yahoo.com<br>
 http://www.github.com/kwong2<br>
 http://www.linkedin.com/in/kwong4
 
 
-### Alfonso Estremadoyro
+#### Alfonso Estremadoyro
 
 alfonsoestre24@gmail.com<br>
 http://www.github.com/ChannelTwo<br>
